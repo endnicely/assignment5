@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 05 - Employee Management Application</title>
-    <script src="js/employee-management.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-   <form>
-      <input type="text" id="name" value="" size="30"/>
-      <input type="text" id="title" value="" size="30"/>
-      <input type="text" id="extension" value="" size="30"/>
-      <input type="button" id="add" value="Add" />
-   </form>
-    
+     <main>
+         <h1>The Employee Management Application</h1>
+         <h2>Add Employee</h2>
+         <div>
+            <form action="" method="get" id="registration_form">
+                <strong>Name:</strong>
+                <input type="text" id="name"/>&nbsp; <span id="requireName"></span><br>
+                <strong>Title:</strong>
+                <input type="text" id="title"/>&nbsp; <span id="requireTitle"></span><br>
+                <strong>Extension</strong>
+                <input type="text" id="extension" />&nbsp; <span id="requireExt"></span><br>
+                <input type="button" id="add" value="Add">
+            </form>
+        </div>  
+        <table>
+            <caption id="employeeTableHeader">&nbsp;</caption>
+            <thead><tr><th>Name</th><th>Title</th><th>Extension</th><th></th></tr></thead>
+            <tbodY id="employeeTblBody"></tbodY>
+        </table>
+    </main>
 </body>
+<script src="js/employee-management.js"></script>
 </html>

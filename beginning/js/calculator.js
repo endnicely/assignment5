@@ -9,10 +9,13 @@ function enter(val) {
     $("result").value +=  val;
 }
 
+
+
 function calculate() {
     "use strict";
     $("result").value = eval($("result").value);
 }
+
 
 function init() {
     "use strict";
@@ -24,37 +27,67 @@ function init() {
         }
     });
 
-//    zero.addEventListener("click", enter($("zero")), false);
+//    zero.addEventListener("click", function (e) {
+//	    enter(e.target.value);
+//    }, false);
 //    
-//    one.addEventListener("click", enter($("one")), false);
+//    one.addEventListener("click", function (e) {
+//        enter(e.target.value);
+//    }, false);
+//
+//    two.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    two.addEventListener("click", enter($("two")), false);
+//    three.addEventListener("click", function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    three.addEventListener("click", enter($("three")), false);
+//    four.addEventListener("click", function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    four.addEventListener("click", enter($("four")), false);
+//    five.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    five.addEventListener("click", enter($("five")), false);
+//    six.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    six.addEventListener("click", enter($("six")), false);
+//    seven.addEventListener("click", function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    seven.addEventListener("click", enter($("seven")), false);
+//    eight.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    eight.addEventListener("click", enter($("eight")), false);
+//    nine.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    nine.addEventListener("click", enter($("nine")), false);
+//    period.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    period.addEventListener("click", enter($("period")), false);
+//    add.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
+//
+//    subtract.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    add.addEventListener("click", enter($("add")), false);
+//    multiply.addEventListener("click",  function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    subtract.addEventListener("click", enter($("subtract")), false);
+//    divide.addEventListener("click", function (e) {
+//        enter(e.target.value);
+//    }, false);
 //    
-//    multiply.addEventListener("click", enter($("multiply")), false);
-//    
-//    divide.addEventListener("click", enter($("divide")), false);
-    
-//    equal.addEventListener("click", calculate, false);
+    equal.addEventListener("click", calculate, false);
      
 }
 
